@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Navel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jlt-ms-gYp" customClass="CustomInput" customModule="Navel" customModuleProvider="target">
+                                <rect key="frame" x="50" y="244" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="list.bullet.rectangle.portrait.fill" catalog="system"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zTp-hV-wbf" customClass="CustomInput" customModule="Navel" customModuleProvider="target">
+                                <rect key="frame" x="50" y="288" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="person.fill" catalog="system"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zam-H7-iCx" customClass="CustomInput" customModule="Navel" customModuleProvider="target">
+                                <rect key="frame" x="50" y="332" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="mail.fill" catalog="system"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fsZ-Wq-VUT" customClass="CustomInput" customModule="Navel" customModuleProvider="target">
+                                <rect key="frame" x="50" y="376" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="phone" catalog="system"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kBH-bu-jxs" customClass="CustomInput" customModule="Navel" customModuleProvider="target">
+                                <rect key="frame" x="50" y="420" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="lock" catalog="system"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jlt-ms-gYp" secondAttribute="trailing" constant="50" id="5Vv-58-a5d"/>
+                            <constraint firstItem="zam-H7-iCx" firstAttribute="trailing" secondItem="jlt-ms-gYp" secondAttribute="trailing" id="9Qe-Ft-pRg"/>
+                            <constraint firstItem="kBH-bu-jxs" firstAttribute="leading" secondItem="jlt-ms-gYp" secondAttribute="leading" id="H9d-Qz-4HD"/>
+                            <constraint firstItem="fsZ-Wq-VUT" firstAttribute="leading" secondItem="jlt-ms-gYp" secondAttribute="leading" id="KN7-ae-xfm"/>
+                            <constraint firstItem="kBH-bu-jxs" firstAttribute="trailing" secondItem="jlt-ms-gYp" secondAttribute="trailing" id="Rts-o7-d0o"/>
+                            <constraint firstItem="zTp-hV-wbf" firstAttribute="top" secondItem="jlt-ms-gYp" secondAttribute="bottom" constant="10" id="SFN-SD-rRa"/>
+                            <constraint firstItem="jlt-ms-gYp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Tig-jQ-LZg"/>
+                            <constraint firstItem="fsZ-Wq-VUT" firstAttribute="trailing" secondItem="jlt-ms-gYp" secondAttribute="trailing" id="aXI-dc-T7w"/>
+                            <constraint firstItem="zTp-hV-wbf" firstAttribute="leading" secondItem="jlt-ms-gYp" secondAttribute="leading" id="dgE-mM-MYe"/>
+                            <constraint firstItem="kBH-bu-jxs" firstAttribute="top" secondItem="fsZ-Wq-VUT" secondAttribute="bottom" constant="10" id="fV6-nd-uN8"/>
+                            <constraint firstItem="zam-H7-iCx" firstAttribute="top" secondItem="zTp-hV-wbf" secondAttribute="bottom" constant="10" id="i3W-Le-9hj"/>
+                            <constraint firstItem="fsZ-Wq-VUT" firstAttribute="top" secondItem="zam-H7-iCx" secondAttribute="bottom" constant="10" id="pxk-Hh-Ska"/>
+                            <constraint firstItem="zam-H7-iCx" firstAttribute="leading" secondItem="jlt-ms-gYp" secondAttribute="leading" id="qGm-O4-y9P"/>
+                            <constraint firstItem="zTp-hV-wbf" firstAttribute="trailing" secondItem="jlt-ms-gYp" secondAttribute="trailing" id="rAk-Ag-pZD"/>
+                            <constraint firstItem="jlt-ms-gYp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="wGC-tK-aPE"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="19" y="50"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="fsZ-Wq-VUT">
+            <size key="intrinsicContentSize" width="154.5" height="34"/>
+        </designable>
+        <designable name="jlt-ms-gYp">
+            <size key="intrinsicContentSize" width="94" height="34"/>
+        </designable>
+        <designable name="kBH-bu-jxs">
+            <size key="intrinsicContentSize" width="118.5" height="34"/>
+        </designable>
+        <designable name="zTp-hV-wbf">
+            <size key="intrinsicContentSize" width="122" height="34"/>
+        </designable>
+        <designable name="zam-H7-iCx">
+            <size key="intrinsicContentSize" width="96.5" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="list.bullet.rectangle.portrait.fill" catalog="system" width="115" height="128"/>
+        <image name="lock" catalog="system" width="128" height="128"/>
+        <image name="mail.fill" catalog="system" width="128" height="93"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="phone" catalog="system" width="128" height="115"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
